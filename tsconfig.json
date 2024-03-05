@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "outDir": "./build",
+    "module": "commonjs",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "lib": ["es2015"]
+}
