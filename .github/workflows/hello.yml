@@ -9,3 +9,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+  now_it_is:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Datetime
+        run: |
+          date
