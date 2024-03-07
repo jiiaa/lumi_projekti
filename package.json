@@ -8,7 +8,8 @@
     "ts-node": "ts-node",
     "tsc": "tsc",
     "dev": "ts-node-dev ./src/index.ts",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "start": "node build/index.js"
   },
   "author": "Jukka A.",
   "license": "ISC",
