@@ -22,5 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Add dependencies
+        run: npm install
       - name: Run script
         run: npm start
