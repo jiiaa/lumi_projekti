@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fetchHtmlService_1 = __importDefault(require("./services/fetchHtmlService"));
 const snowReportService_1 = __importDefault(require("./services/snowReportService"));
 // import snowWeatherService from './services/snowWeatherService';
-// import databaseService from "./services/databaseService";
+const databaseService_1 = __importDefault(require("./services/databaseService"));
 async function main() {
     const url = 'https://www.snow-forecast.com/countries/Austria/resorts/A-D';
     // const url ='https://www.snow-forecast.com/countries/Australia/resorts';
@@ -18,6 +18,6 @@ async function main() {
     const resortData = snowReportService_1.default.parseHtml(html, url);
     // const resortData = await snowWeatherService.parseHtml(url);
     console.log(resortData);
-    // await databaseService.createDatabase(resortData);
+    await databaseService_1.default.createDatabase(resortData);
 }
 main().then(() => { }).catch(() => { });

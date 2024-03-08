@@ -7,10 +7,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config({ path: __dirname + '/../../.env' });
 const getConfig = () => {
     return {
-        DB_HOST: process.env.DB_HOST,
-        DB_DATABASE: process.env.DB_DATABASE,
-        DB_USER: process.env.DB_USER,
-        DB_PASSWORD: process.env.DB_PASSWORD,
+        DB_STRING: process.env.DB_STRING,
     };
 };
 const config = getConfig();

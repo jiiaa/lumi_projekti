@@ -1,7 +1,7 @@
 import fetchHtmlService from './services/fetchHtmlService';
 import snowReportService from './services/snowReportService';
 // import snowWeatherService from './services/snowWeatherService';
-// import databaseService from "./services/databaseService";
+import databaseService from "./services/databaseService";
 
 async function main() {
   const url = 'https://www.snow-forecast.com/countries/Austria/resorts/A-D';
@@ -16,7 +16,7 @@ async function main() {
   // const resortData = await snowWeatherService.parseHtml(url);
   console.log(resortData);
 
-  // await databaseService.createDatabase(resortData);
+  await databaseService.createDatabase(resortData);
 }
 
 main().then(() => {}).catch(() => {});
